@@ -1,80 +1,96 @@
-@font-face {
-
+/* @font-face {
     font-family: 'Roboto', sans-serif;
 
-}
+} */
 
 * {
 
+    
     font-family: Beyonders, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
-
-
-
-*{
-
     font-size: 12pt;
-
-}
-
-*{
-
+    
+    border: none;
+    
     font-weight: 400;
-
+    
     list-style: none;
-
+    
     text-shadow: 0px, 0px, 0px;
-
+    
     margin: 0px;
-
+    
     padding: 0px; 
-
+    
     box-sizing: border-box; 
-
+    
     color:antiquewhite; 
-
+    
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    border: solid 1px red;
 }
+body {
+    
+    background-color: #486966;
+}
+
+/* Header */
 
 .header{
-
     padding: 1em;
 }
-.header .navbar  {
 
+.header .navbar  {
     display: flex;
     justify-content:space-between;
-   
 }
 
 .header .navbar .list {
-
     gap: 12pt;
     display: flex;
     align-items: center;
-
 }
 
-*{
 
-    background-color: #486966;
-
-}
+/* Content main */
 .main {
 
-    padding: 0 60px;
+    padding: 0 40px;
+    
 }
 
 .main .section {
-
-    margin: 24pt;
+    /* margin: 24pt; */
     display: flex;
     align-items: center;
     gap: 16px;
     
+    position: relative;
+    
+    overflow: hidden;
+    
+}
 
+.main .section img {
+    position: absolute;
+    z-index: -10;
+    top: 0px;
+    height: 100%;
+    /* left: 0;] */
+}
+.main .section div {
+    padding: 40pt 0;
+    background-image: linear-gradient(90deg, #486966, #00000000);
+}
+.main .section img:nth-child(even) {
+    right: 0;
+}
+.main .section img:nth-child() {
+    left: 0;
+}
+
+.main .section:nth-child(even) {
+    align-items: flex-end;
+    text-align: right;
 }
 .main .section .titulo1 {
 
@@ -125,6 +141,8 @@
 
 }
 
+
+
 button {
 
     background-color: brown;
@@ -133,11 +151,11 @@ button {
     border-radius: 10px;
 }
 
-.main .section img {
+/* .main .section img {
 
     width: 900px; height: 900px;
     
-}
+} */
 
 
 .main .section .imagen2 {
